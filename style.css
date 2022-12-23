@@ -4885,15 +4885,12 @@ blockquote {
 .code-holder {
     padding-top: 12px;
     padding-bottom: 12px;
+    
 }
 
 .code-holder-work {
     padding-top: 12px;
     padding-bottom: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 ._20px-paragraph {
@@ -6536,4 +6533,8 @@ blockquote {
 .wiv-image {
     width: 1100px;
     height: 450px;
+}
+
+.padding-top-text {
+    padding-top: 30px;
 }
