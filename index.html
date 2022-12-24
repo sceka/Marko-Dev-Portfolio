@@ -437,9 +437,26 @@
                                <div class="iphone-main">
                                 <div class="notification-center">
                                     <div class="time" id="time">9:91</div>
-                                    <div class="iphone-icons">9:00</div>
+                                    <div class="iphone-icons">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/39/39934.png" width="20px"/>
+                                        <img src="https://icons.veryicon.com/png/o/miscellaneous/alan-ui/ios-wifi-2.png" width="25px"/>
+                                        <img src="https://icons.veryicon.com/png/o/miscellaneous/iview30-ios-style/ios-battery-full-5.png" width="25px"/>
+                                    </div>
                                 </div>
-                                <div class="iphone-apps"></div>
+                                <div class="iphone-apps">
+                                    <div class="iphone-columns">
+                                        <div class="apps">
+                                            <div class="app">
+                                                <img src="https://i.pinimg.com/originals/03/fd/28/03fd284948387458641483ef58822e3c.png" width="60px"/>
+                                            </div>
+                                            <div class="app">
+                                                <img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Stock-512.png" width="60px"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="iphone-columns"></div>
+                                    <div></div>
+                                </div>
                                </div>
                          </div>
                          <i class="iphone-button button1"></i>
@@ -1088,7 +1105,6 @@
              let time = document.getElementById('time')
              let date = new Date();
              time.innerHTML = date.getHours() + ':' + date.getMinutes();
-             console.log(time);
           }
         
            const notification =  document.getElementById('notification');

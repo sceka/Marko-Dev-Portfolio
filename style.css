@@ -6752,7 +6752,7 @@ blockquote {
 .iphone .screen .iphone-main {
     position: absolute;
     /* background-color: red; */
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -6770,4 +6770,21 @@ blockquote {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    width: 38%;
+    padding-left: 20px;
+}
+
+.iphone-columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.apps {
+    display: flex;
+    flex-direction: row;
+}
+
+.app {
+    cursor: pointer;
 }
