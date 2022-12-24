@@ -6752,7 +6752,7 @@ blockquote {
 .iphone .screen .iphone-main {
     position: absolute;
     /* background-color: red; */
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -6771,8 +6771,8 @@ blockquote {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 38%;
-    padding-left: 20px;
+    width: 32%;
+    padding-right: 20px;
 }
 
 .iphone-columns {
@@ -6787,4 +6787,35 @@ blockquote {
 
 .app {
     cursor: pointer;
+}
+
+.clock-app-container {
+    display: none;
+    min-height: 645px;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    width: 100%;
+    background-color: black;
+}
+
+.edit-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.world-clock-title {
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.border {
+    border-bottom: 1px solid white;
+    width: 90%;
+    display: flex;
+    justify-content: center;
 }

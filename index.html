@@ -443,10 +443,19 @@
                                         <img src="https://icons.veryicon.com/png/o/miscellaneous/iview30-ios-style/ios-battery-full-5.png" width="25px"/>
                                     </div>
                                 </div>
-                                <div class="iphone-apps">
+                                <div class="clock-app-container" id="clock-app-container">
+                                    <div class="edit-section">
+                                        <div>Edit</div>
+                                        <img />
+                                    </div>
+                                    <div class="world-clock-title">World Clock</div>
+                                    <div class="border"></div>
+                                    <div class="edit"></div>
+                                </div>
+                                <div class="iphone-apps" id="iphone-apps">
                                     <div class="iphone-columns">
                                         <div class="apps">
-                                            <div class="app">
+                                            <div class="app" onclick="openClock()">
                                                 <img src="https://i.pinimg.com/originals/03/fd/28/03fd284948387458641483ef58822e3c.png" width="60px"/>
                                             </div>
                                             <div class="app">
@@ -1116,6 +1125,16 @@
                 notification.style.transition= 'visibility 0s 1s, opacity 1s linear';
             }, 10000)
            }, 15000);
+
+           function openClock() {
+             let icons =  document.getElementById('iphone-apps')
+             let screen =  document.getElementById('screen')
+             let clock =  document.getElementById('clock-app-container')
+             icons.style.display = 'none';
+             clock.style.display = 'flex'
+             clock.style.flexDirection = 'column'
+             
+           }
 </script>
         <!--[if lte IE 9
             ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
