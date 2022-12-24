@@ -1,0 +1,52 @@
+.iphone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.iphone {
+    position: absolute;
+    width: 14.4%;
+    height: 65%;
+    border-radius: 10px;
+    background-image: url("./iphone4k1.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.iphone-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#time {
+    padding-top: 2px;
+    padding-left: 15px;
+}
+
+.notification-right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.battery {
+    padding-top: 4px;
+}
+
+.status {
+}
