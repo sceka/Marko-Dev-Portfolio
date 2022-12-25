@@ -6900,3 +6900,12 @@ blockquote {
 .stock-app {
     display: none;
 }
+
+.stocks-titel {
+    font-size: 25px;
+}
+
+.stocks-date {
+    font-size: 25px;
+    opacity: 0.4;
+}
