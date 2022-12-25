@@ -6814,8 +6814,89 @@ blockquote {
 }
 
 .border {
-    border-bottom: 1px solid white;
-    width: 90%;
+    border-bottom: 1px solid gray;
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.border-wrapper {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.global-time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+}
+
+.global-time-name {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.global-time {
+    font-size: 45px;
+    padding-right: 5px;
+}
+
+.global-time-part {
+    font-size: 20px;
+    padding-left: 3px;
+}
+
+.clock-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    width: 90%;
+}
+
+.clock-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-filter {
+    filter: invert(56%) sepia(33%) saturate(6954%) hue-rotate(360deg)
+        brightness(103%) contrast(101%);
+}
+
+.world-text-color {
+    color: #ff7400;
+    font-size: 11px;
+    padding-top: 2px;
+}
+
+.clock-menu-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.white-color-text {
+    color: white;
+}
+
+.gray-filter-color {
+    filter: invert(73%) sepia(19%) saturate(0%) hue-rotate(207deg)
+        brightness(97%) contrast(84%);
+}
+
+.gray-text-color {
+    color: #b2b2b2;
+}
+
+.stock-app {
+    display: none;
 }

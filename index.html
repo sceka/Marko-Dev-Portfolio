@@ -449,8 +449,82 @@
                                         <img />
                                     </div>
                                     <div class="world-clock-title">World Clock</div>
-                                    <div class="border"></div>
+                                    <div class="border-wrapper">
+                                       <div class="border"></div>
+                                    </div>
+                                    <div class="global-time-container">
+                                        <div class="global-time-name">Montenegro</div>
+                                        <div class="global-time" id="montenegro-global-time">9:41<span class="global-time-part">PM</span></div>
+                                    </div>
+                                    <div class="border-wrapper">
+                                        <div class="border"></div>
+                                     </div>
+                                    <div class="global-time-container">
+                                        <div class="global-time-name">New York</div>
+                                        <div class="global-time" id="new-york-global-time">9:41<span class="global-time-part">PM</span></div>
+                                    </div>
+                                    <div class="border-wrapper">
+                                        <div class="border"></div>
+                                     </div>
+                                    <div class="global-time-container">
+                                        <div class="global-time-name">Geneva</div>
+                                        <div class="global-time" id="geneva-global-time">9:41<span class="global-time-part">PM</span></div>
+                                    </div>
+                                    <div class="border-wrapper">
+                                        <div class="border"></div>
+                                     </div>
+                                    <div class="global-time-container">
+                                        <div class="global-time-name">Dubai</div>
+                                        <div class="global-time" id="dubai-global-time">9:41<span class="global-time-part">PM</span></div>
+                                    </div>
+                                    <div class="border-wrapper">
+                                        <div class="border"></div>
+                                     </div>
+                                    <div class="global-time-container">
+                                        <div class="global-time-name">Bejing</div>
+                                        <div class="global-time" id="bejing-global-time">9:41<span class="global-time-part">PM</span></div>
+                                    </div>
+                                    <div class="border-wrapper">
+                                        <div class="border"></div>
+                                     </div>
+                                     <div class="clock-menu-wrapper">
+                                    <div class="clock-menu">
+                                        <div class="clock-menu-item">
+                                            <img width="20px" class="image-filter" src="https://www.freeiconspng.com/thumbs/world-icon-png/web-icon-black-png-planet-web-world-icon-17.png"/>
+                                            <div class="world-text-color">World Clock</div>
+                                        </div>
+                                        <div class="clock-menu-item">
+                                            <img width="20px" class="gray-filter-color" src="https://cdn.iconscout.com/icon/free/png-256/alarm-396-475003.png"/>
+                                            <div class="gray-text-color">Alarm</div>
+                                        </div>
+                                        <div class="clock-menu-item">
+                                            <img width="20px" class="gray-filter-color" src="https://www.freeiconspng.com/uploads/stopwatch-icon-10.png"/>
+                                            <div class="gray-text-color">Stopwatch</div>
+                                        </div>
+                                        <div class="clock-menu-item">
+                                            <img width="20px" class="gray-filter-color" src="https://icons.veryicon.com/png/o/miscellaneous/iview30-ios-style/ios-timer-4.png"/>
+                                            <div class="gray-text-color">Timer</div>
+                                        </div>
+                                    </div>
+                                </div>
                                     <div class="edit"></div>
+                                </div>
+                                <div class="stock-app" id="stock-app">
+                                    <div style="display: flex; flex-direction: row;">
+                                    <div>Stocks</div>
+                                    <div>...</div>
+                                </div>
+                                    <div>25 December</div>
+                                    <div class="search-bar"></div>
+                                    <div>My Symbols</div>
+                                    <div style="display: flex; flex-direction: row;">
+                                         <div style="display: flex; flex-direction: column;">
+                                            <div>Dow Jones</div>
+                                            <div>Dow Jones Industrial</div>
+                                         </div>
+                                         <div class="chart"></div>
+                                         <div class="chart-price" style="display:flex; flex-direction: column;"></div>
+                                </div>
                                 </div>
                                 <div class="iphone-apps" id="iphone-apps">
                                     <div class="iphone-columns">
@@ -458,7 +532,7 @@
                                             <div class="app" onclick="openClock()">
                                                 <img src="https://i.pinimg.com/originals/03/fd/28/03fd284948387458641483ef58822e3c.png" width="60px"/>
                                             </div>
-                                            <div class="app">
+                                            <div class="app" onclick="openStock()">
                                                 <img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Stock-512.png" width="60px"/>
                                             </div>
                                         </div>
@@ -1134,6 +1208,31 @@
              clock.style.display = 'flex'
              clock.style.flexDirection = 'column'
              
+           }
+
+           const clock = document.getElementById('clock-app-container')
+           clock.addEventListener('mouseover', getTimeOfWorld());
+           function getTimeOfWorld() {
+            let montenegro = document.getElementById('montenegro-global-time')
+            let geneva = document.getElementById('geneva-global-time')
+            let newYork = document.getElementById('new-york-global-time')
+            let dubai = document.getElementById('dubai-global-time')
+            let bejing = document.getElementById('bejing-global-time')
+            const date = new Date();
+            montenegro.innerHTML =  date.getHours() + ':' + date.getMinutes();   
+            newYork.innerHTML =  date.getHours() - 6 + ':' + date.getMinutes();   
+            geneva.innerHTML =  date.getHours()  + ':' + date.getMinutes();   
+            dubai.innerHTML =  date.getHours() + 3  + ':' + date.getMinutes();   
+            bejing.innerHTML =  date.getHours() + 7  + ':' + date.getMinutes();   
+           }
+           function openStock() {
+            let icons =  document.getElementById('iphone-apps')
+             let screen =  document.getElementById('screen')
+             let stock =  document.getElementById('stock-app')
+             icons.style.display = 'none';
+             stock.style.display = 'flex'
+             stock.style.flexDirection = 'column'
+
            }
 </script>
         <!--[if lte IE 9
