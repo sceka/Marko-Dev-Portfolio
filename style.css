@@ -6992,6 +6992,21 @@ blockquote {
 }
 
 .espn-app {
-    padding-top: 2px;
+    padding-top: 4px;
     padding-left: 4px;
+}
+
+.espn {
+    display: none;
+    width: 100%;
+    min-height: 620px;
+    background-color: white;
+    flex-direction: column;
+}
+
+.espn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
