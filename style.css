@@ -7010,3 +7010,8 @@ blockquote {
     align-items: center;
     flex-direction: column;
 }
+
+.favorites-nba-wrapper {
+    display: flex;
+    flex-direction: column;
+}
