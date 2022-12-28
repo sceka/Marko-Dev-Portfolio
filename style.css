@@ -4869,6 +4869,7 @@ blockquote {
     margin-bottom: 32px;
     border-radius: 11px;
     background-color: #212121;
+    margin-bottom: 100px;
 }
 
 .back-card-holder-skill {
@@ -4920,7 +4921,7 @@ blockquote {
 
 .featured-work-header {
     padding-right: 70px;
-    padding-bottom: 20px;
+    padding-bottom: 120px;
     padding-left: 70px;
 }
 
