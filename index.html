@@ -429,7 +429,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="iphone-wrapper" id="iphone-wrapper" >
+                <!-- <div class="iphone-wrapper" id="iphone-wrapper" >
+                    <div class="word-wrapper">
+                    <div id="word" class="word anim-typewriter">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ducimus minus debitis provident incidunt nemo quod! Excepturi quaerat quas perspiciatis?
+                    </div>
+                </div>
                     <div class="iphone-container" id="iphone-container">
                        <div class="iphone">
                            <div class="screen">
@@ -698,9 +703,9 @@
                                     </div>
                                     <div class="notes-text">So this is my story...</div>
                                     <div class="notes-text">I was 12 and I just got new phone, Samsung S3. I rooted it immediately since i was interested in hacking and that kind of staff so I did that. Changed the OS of it, and it was working just fine. Continued with it until the phone just turned off and I coulnt get it back to work. I brought it with my father to the provider and they said they will ahve a look into it. After several days, they called my dad and said they wanted to sue me. Luckily my dad knew those guys so they didn't do that.</div>
-                                </div>
+                                </div> -->
                                 <!-- <div class="">Notes</div> -->
-                                <div class="iphone-apps" id="iphone-apps" style="padding-top: 20px;">
+                                <!-- <div class="iphone-apps" id="iphone-apps" style="padding-top: 20px;">
                                     <div class="iphone-columns">
                                         <div class="apps">
                                             <div class="app" style="display: flex; flex-direction: column; align-items: center;" onclick="openClock()">
@@ -731,6 +736,10 @@
                                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" width="59px"/>
                                             <div style="padding-top: 5px;">Mail</div>
                                         </a>
+                                        <div class="app" style="display: flex; flex-direction: column; align-items: center; padding-left: 12px; text-decoration: none;" onclick="openMail()">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/74/74897.png" style="background-color: aliceblue;" width="59px"/>
+                                            <div style="padding-top: 5px;">Mail</div>
+                                        </div>
                                     </div>
                                         
                                     </div>
@@ -744,7 +753,7 @@
                          <i class="iphone-rightSideButton"></i>
                        </div>
                      </div>
-                   </div>
+                   </div> -->
             </div>
         </div>
         <div class="section" id="work">
@@ -837,7 +846,7 @@
                                             <li>Despite being an intern, not knowing the technologies well, and needing to use Uniswap Smart Contracts for which had a severe lack of content and documentation surrounding it at the time, we delivered a fully functional website and tested it in under a month, despite our deadline being one and half months.</li>
                                             <li>Managed to successfully implement responsiveness on devices of all sizes despite having only once worked on responsive websites before.
                                             </li>
-                                            <li>Technologies used: Typescript, Vue.js, Quasar Framework, Web 3.0, Interacting with firm’s Smart Contracts, CSS, Responsiveness, Metamask
+                                            <li>Technologies used: Typescript, Vue.js, Quasar Framework, Web 3.0, Interacting with companies's Smart Contracts, CSS, Responsiveness, Metamask
                                             </li>
                                         </ul>
                                     </p>
@@ -848,6 +857,7 @@
                                             <li>Implemented industry leading security standards of encryption and decryption as part of the platform.</li>
                                             <li>Successfully accomplished all of this despite the project requiring to be built in C# and .NET, despite never having using those technologies previously.
                                             </li>
+                                            <li>Technologies used: C#, .NET, Vue.js, Encryption, Decryption</li>
                                         </ul>
                                     </p>
                                 </div>
@@ -1468,7 +1478,10 @@
               let icons =  document.getElementById('iphone-apps')
               let resume = document.getElementById('resume');
               resume.style.display = 'flex';
-              icons.style.display = 'none'           
+              icons.style.display = 'none';
+              
+             
+              
             }
 
             function openESPN() {
@@ -1483,6 +1496,13 @@
                 icons.style.display = 'none'
                 notes.style.display = 'flex'
             }
+
+
+
+//Animation
+
+
+
 </script>
 
         <!--[if lte IE 9
