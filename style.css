@@ -7084,3 +7084,14 @@ blockquote {
     color: orange;
     padding: 20px;
 }
+
+.back-card-holder-project {
+    width: 33%;
+    background-color: #212121;
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+}
