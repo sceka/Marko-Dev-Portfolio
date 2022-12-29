@@ -7086,7 +7086,7 @@ blockquote {
 }
 
 .back-card-holder-project {
-    width: 33%;
+    width: 50%;
     background-color: #212121;
     margin: 10px;
 }
@@ -7094,4 +7094,18 @@ blockquote {
 .project-container {
     display: flex;
     flex-direction: row;
+}
+
+/* .project-image {
+    width: 1000px;
+} */
+
+.hackhaton-title {
+    display: flex;
+    justify-content: center;
+}
+
+.personal-projects-title {
+    display: flex;
+    justify-content: center;
 }
