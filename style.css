@@ -3463,6 +3463,7 @@ blockquote {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    object-position: 0% 0%;
 }
 
 .laptop-secondary-screen-container {
@@ -4895,6 +4896,7 @@ blockquote {
 
 ._20px-paragraph {
     font-size: 20px;
+    opacity: 0.7;
 }
 
 .screen-forntend-image {
@@ -7108,4 +7110,8 @@ blockquote {
 .personal-projects-title {
     display: flex;
     justify-content: center;
+}
+
+.ul-text {
+    opacity: 0.7;
 }
