@@ -4870,7 +4870,7 @@ blockquote {
     margin-bottom: 32px;
     border-radius: 11px;
     background-color: #212121;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .back-card-holder-skill {
@@ -7119,9 +7119,26 @@ blockquote {
 .wiv-image-edited {
     width: 100%;
     height: 500px;
+    object-fit: cover;
+}
+
+.camea-picture {
+    object-fit: cover;
 }
 
 .personal-images {
     width: 100%;
-    /* height: 200px; */
+    /* height: 200pxz; */
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-image {
+    height: 300px;
+    object-fit: cover;
+    margin-top: 3px;
+}
+
+.blockchain-image {
+    margin-bottom: 12px;
 }
