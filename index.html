@@ -814,7 +814,7 @@
                             justify-content: center;
                             align-items: center;" class="card-holder">
                                 <div class="padding-top-text">
-                                    <img src="./wiv.png" class="wiv-image" />
+                                    <img src="./wiv.png" class="wiv-image-edited" />
                                 </div>
                                 <div class="fade-in-move-on-scroll">
                                     <p class="_20px-paragraph">
@@ -904,7 +904,7 @@
                             justify-content: center;
                             align-items: center;" class="card-holder">
                                 <div class="padding-top-text">
-                                    <img src="./camea.jpg" class="wiv-image" />
+                                    <img src="./camea.jpg" class="wiv-image-edited" />
                                 </div>
                                 <div class="fade-in-move-on-scroll">
                                     <p class="_20px-paragraph yellow-text padding-top-text">
@@ -968,9 +968,9 @@
                                     ></div>
                                 </div> -->
                                 <div class="title-for-card">Hackhaton</div>
-                                <div style="display: flex; justify-content: space-between; align-items: center; width: 70px;">
-                                    <img src="./pngegg.png" style="cursor: pointer;" width="30px"/>
-                                    <a href="https://devpost.com/software/postr"><img src="./link-64.png" style="cursor: pointer;" width="30px"/></a>
+                                <div style="display: flex; justify-content: space-between; align-items: center; width: 60px;">
+                                   <a href="https://github.com/g-popovic/postr"> <img src="./pngegg.png" style="cursor: pointer;" width="25px"/></a>
+                                    <a href="https://devpost.com/software/postr"><img src="./link-64.png" style="cursor: pointer;" width="25px"/></a>
                                 </div>
                             </div>
                             <div style="opacity: 1; display: flex;
@@ -1031,9 +1031,9 @@
                                     ></div>
                                 </div> -->
                                 <div class="title-for-card">Hackathon</div>
-                                <div style="display: flex; justify-content: space-between; align-items: center; width: 70px;">
-                                    <img src="./pngegg.png" style="cursor: pointer;" width="30px"/>
-                                    <a href="https://devpost.com/software/carbontracker"><img src="./link-64.png" style="cursor: pointer;" width="30px"/></a>
+                                <div style="display: flex; justify-content: space-between; align-items: center; width: 60px;">
+                                    <a href="https://github.com/g-popovic/tohacks-project"><img src="./pngegg.png" style="cursor: pointer;" width="25px"/></a>
+                                    <a href="https://devpost.com/software/carbontracker"><img src="./link-64.png" style="cursor: pointer;" width="25px"/></a>
                                 </div>
                                 
                             </div>
@@ -1098,14 +1098,14 @@
                                     ></div>
                                 </div> -->
                                 <div class="title-for-card">Personal Project</div>
-                                <img src="./pngegg.png" style="cursor: pointer;" width="30px"/>
+                                <img src="./pngegg.png" style="cursor: pointer;" width="25px"/>
                             </div>
                             <div style="opacity: 1; display: flex;
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;" class="card-holder">
                                 <div class="padding-top-text">
-                                    <img src="./scekaMovies.png"/>
+                                    <img src="./scekaMovies.png" class="personal-images"/>
                                 </div>
                                 <div class="fade-in-move-on-scroll">
                                     <p class="_20px-paragraph yellow-text padding-top-text">
@@ -1733,7 +1733,17 @@
                 notes.style.display = 'flex'
             }
 
-
+            function sendEmail() {
+                Email.send({
+                    Host: 'smtp.yourisp.com',
+                    Username: 'scekicm02@gmail.com',
+                    Password: 'password',
+                    To: 'scekicm02@gmail.com',
+                    From: document.getElementById('email').innerHTML,
+                    Subject: 'This is the subject',
+                    Body: 'And this is the body'
+                })
+            }
 
 //Animation
 
